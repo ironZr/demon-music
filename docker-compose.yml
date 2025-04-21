@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  music-demon:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: music-demon
+    restart: always
+    ports:
+      - "8848:80"
